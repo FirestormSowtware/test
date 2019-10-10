@@ -8,6 +8,7 @@ uses
 
 type
   TMain = class(TForm)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -20,5 +21,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TMain.FormCreate(Sender: TObject);
+begin
+ ShowMessage('Hello world');
+end;
 
 end.
